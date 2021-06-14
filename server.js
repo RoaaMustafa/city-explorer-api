@@ -18,10 +18,10 @@ class Forecast {
 }
 
 //localhost:3060/getCity?cityLan=-33.87&cityLon=151.21
-server.get('/getCity',(req,res)=>{
+server.get('/getCity',async(req,res)=>{
   let lan=req.query.cityLan;
   let lon=req.query.cityLon;
-      let getCity = weatherData.city.find(item=>{
+      let getCity =  await weatherData.city.find(item=>{
           if(item.lat == lan && item.lon==lon)
           return item.city_name;
       })
