@@ -7,7 +7,7 @@ server.use(cors());
 const PORT = 3060;
 let arr =[]
 server.get("/", (req, res) => {
-  res.send("Hello , I\'m Roaa");
+  res.send("Hello you are in the root , I\'m Roaa");
 });
 
 class Forecast {
