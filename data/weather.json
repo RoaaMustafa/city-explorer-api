@@ -1,31 +1,31 @@
-{
-"city":[
+{"city":
+[
   { "city_name": "Amman",
-   "lon": 151.21,
+   "lon": 35.9239625,
    "timezone": "Australia/Sydney",
-   "lat": -33.87,
+   "lat": 31.9515694,
    "country_code": "AU",
    "state_code": "02",
-   "description": "Low of 17.1, high of 23.6 with broken clouds",
-    "date": "2021-03-31"
+   "date":"2021-07-1",
+   "description":"Low of 17.5, high of 29.9 with few clouds"
+ },
+ { "city_name": " Seattle",
+   "lon": -95.785269,
+   "timezone": "Australia/Sydney",
+   "lat": 36.071254,
+   "country_code": "AU",
+   "state_code": "02",
+   "date":"2021-05-1",
+   "description":"Low of 11.2, high of 21.0 with heavy clouds"
  },
  { "city_name": "Paris",
-   "lon": 84.21,
+   "lon": 2.3514616,
    "timezone": "Australia/Sydney",
-   "lat": -36.87,
+   "lat": 48.8566969,
    "country_code": "AU",
    "state_code": "02",
-   "description": "Low of 17.5, high of 29.9 with few clouds",
-   "date": "2021-04-01"
- },
- { "city_name": "Seattle",
-   "lon": 91.21,
-   "timezone": "Australia/Sydney",
-   "lat": -47.87,
-   "country_code": "AU",
-   "state_code": "02",
-   "description": "Low of 17.2, high of 26.3 with heavy clouds",
-   "date": "2021-02-09"
+   "date":"2021-04-1",
+   "description":"Low of 10.5, high of 21.9 with broken clouds"
  }
    ]
-}
+  }

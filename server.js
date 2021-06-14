@@ -17,7 +17,7 @@ class Forecast {
   }
 }
 
-//localhost:3060/getCity?cityLan=-33.87&cityLon=151.21
+//localhost:3060/getCity?cityLan=31.9515694&cityLon=35.9239625
 server.get('/getCity',(req,res)=>{
   let lan=req.query.cityLan;
   let lon=req.query.cityLon;
@@ -25,7 +25,7 @@ server.get('/getCity',(req,res)=>{
           if(item.lat == lan && item.lon==lon)
           return item.city_name;
       })
-      // let forecast1 =  new Forecast(getCity.date,getCity.description) ;
+      // let forecast1 = new Forecast(getCity.date,getCity.description) ;
       // arr.push(forecast1);
       res.send(getCity);
   })
