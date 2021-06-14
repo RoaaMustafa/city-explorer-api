@@ -25,9 +25,9 @@ server.get('/getCity',(req,res)=>{
           if(item.lat == lan && item.lon==lon)
           return item.city_name;
       })
-      let forecast1 =  new Forecast(getCity.date,getCity.description) ;
-      arr.push(forecast1);
-      res.send({getCity,arr});
+      // let forecast1 =  new Forecast(getCity.date,getCity.description) ;
+      // arr.push(forecast1);
+      res.send(getCity);
   })
 
 // //localhost:3000 .....
