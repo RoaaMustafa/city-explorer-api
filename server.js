@@ -3,8 +3,9 @@ const server = express();
 const weatherData = require("./data/weather.json");
 const cors = require("cors");
 server.use(cors());
+require ("dotenv").config();
 
-const PORT = 3060;
+const PORT = process.env.PORT || 3060;
 let arr =[]
 server.get("/", (req, res) => {
   res.send("Hello you are in the root , I\'m Roaa");
@@ -35,6 +36,6 @@ server.get('*',(req,res) =>{
     res.status(404).send('sorry, this page not found');
 })
 
-server.listen(PORT,()=>{
+server.listen(process.env.PORT || 3060,()=>{
   console.log(`Listening on PORT ${PORT}`);
 })
