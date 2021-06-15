@@ -61,6 +61,21 @@ class Forcast{
       this.date = item.valid_date;
   }
 }
+//https://api.themoviedb.org/3/search/movie?api_key=730795695fbd9330eebb90692a123233&query=usa&page=1&include_adult=false
+  //localhost:3060/movies?cityName=amman
+  server.get('/movies', getMoviesHandler)
+  function  getMoviesHandler(req, res) {
+    let cityName = req.query.cityName;
+    let key = process.env.MOVIE_API_KEY;
+    console.log(cityName,key);
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${cityName}&page=1`;
+    console.log('outside');
+    axios.get(url).then(result =>{
+        console.log('inside');
+        const movieArray = result.data.results;
+        res.send(movieArray)
+    })
+  }
  //localhost:3060 .....
  server.get("*", (req, res) => {
   res.status(404).send("sorry, this page not found");
