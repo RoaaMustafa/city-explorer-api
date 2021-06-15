@@ -58,7 +58,7 @@ res.send(weatherArray);
 class Forcast{
   constructor(item){
       this.description = item.weather.description;
-      this.date = item.date;
+      this.date = item.valid_date;
   }
 }
  //localhost:3060 .....
