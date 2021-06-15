@@ -72,6 +72,9 @@ server.get('/movies', getMoviesHandler)
         })
     res.send(movieArray);
     })
+    .catch(err =>{
+      res.send(`there is an error in getting the data => ${err}`);
+    })
   }
 class Movie {
     constructor(item) {
