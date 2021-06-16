@@ -82,7 +82,7 @@ class Movie {
         this.overview=item.overview;
         this.averageVotes=item.vote_average;
         this.totalVotes=item.total_votes;
-        this.imagel=item.poster_path;
+        this.imagel=`https://image.tmdb.org/t/p/original${item.poster_path}`;
         this.popularity=item.popularity;
         this.releasedOn=item.release_date;
     }
