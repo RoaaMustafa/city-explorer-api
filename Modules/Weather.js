@@ -27,7 +27,7 @@ function wetherHandler(req, res) {
 }
 class Forcast {
   constructor(item) {
-    this.description = `Low of ${item.min_temp}, high of ${item.max_temp} with ${item.weather.description}`;
+    this.description = `🌨️Low :${item.min_temp}, 🔆high : ${item.max_temp} with ${item.weather.description}`;
     this.date = item.valid_date;
   }
 }
